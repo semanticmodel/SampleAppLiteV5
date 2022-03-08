@@ -1,0 +1,87 @@
+{
+  "logicalTable" : {
+    "name" : "F20 Targets Facts",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F20 Targets Facts",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.F20 Targets Facts.Revenue" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Prod_Key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F20 Targets Facts",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.F20 Targets Facts.Prod_Key" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Office_Key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F20 Targets Facts",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.F20 Targets Facts.Office_Key" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Units",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F20 Targets Facts",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.F20 Targets Facts.Units" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Bill_Mth_Key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F20 Targets Facts",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.F20 Targets Facts.Bill_Mth_Key" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "F20 Targets Facts",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Sample App Lite Data.F20 Targets Facts" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

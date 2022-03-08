@@ -1,0 +1,45 @@
+{
+  "logicalTable" : {
+    "name" : "_SSD SSD_ASSD",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "NEW COLUMN_1",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "_ssd ssd_assd",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.samp.New Column_1" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Z XZ",
+      "dataType" : "UNKNOWN",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "_ssd ssd_assd",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:Sample App Lite Data.samp.z xz" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "_ssd ssd_assd",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:Sample App Lite Data.samp" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

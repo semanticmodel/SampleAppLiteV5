@@ -1,0 +1,21 @@
+{
+  "physicalTable" : {
+    "name" : "samp",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "New Column_1",
+      "dataType" : "UNKNOWN",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "z xz",
+      "dataType" : "UNKNOWN",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : false,
+      "expiryTime" : 0
+    }
+  }
+}

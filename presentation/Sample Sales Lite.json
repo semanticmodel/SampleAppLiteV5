@@ -30,7 +30,6 @@
     "permissions" : [ {
       "accessor" : "role:BIConsumer",
       "access" : "WRITE"
-    } ],
-    "localization" : { }
+    } ]
   }
 }
